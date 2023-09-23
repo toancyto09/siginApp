@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bgr"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/costumeditext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="340dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/rectangle"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textLogin"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/costumeditext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="6dp"
+                android:hint="username"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/costumeditext"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="6dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/btnLogin"
+                android:text="Login"
+                android:textSize="20sp"
+                app:cornerRadius="20dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Not yet registerd? Sigup"
+        android:textSize="16sp"
+        android:id="@+id/siguptext"
+        android:textAlignment="center"
+        android:textColor="@color/textReg"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Huỳnh Văn Toàn - 21115053120153"/>
+
+
+</LinearLayout>
